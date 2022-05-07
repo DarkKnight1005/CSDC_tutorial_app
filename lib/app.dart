@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/ui/screens/home_screen.dart';
+import 'package:myapp/wrapper.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -7,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: Wrapper(),
     );
   }
 }
