@@ -21,10 +21,10 @@ class LoginScreenState extends State<LoginScreen> {
 
   void submitForm(){
     if (_formKey.currentState!.validate()) {
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Login is successful')));
-                  } else {
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Login is unsuccessfull')));
-                  }
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Login is successful')));
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Login is unsuccessfull')));
+    }
   }
 
 
